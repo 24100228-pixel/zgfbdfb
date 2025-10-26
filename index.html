@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh Tương Tác</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Thư Viện Ảnh Tuyệt Vời</h1>
+    </header>
+
+    <div id="image-gallery">
+        <div id="display-area">
+            <img id="main-image" src="images/placeholder.jpg" alt="Di chuột qua ảnh nhỏ để xem ở đây.">
+            <p id="image-description">Di chuột qua một ảnh nhỏ bên dưới để xem ảnh lớn và mô tả.</p>
+        </div>
+
+        <div id="thumbnail-container">
+            <img class="thumbnail" 
+                 src="images/mountain_small.jpg" 
+                 alt="Khung cảnh núi non hùng vĩ" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+
+            <img class="thumbnail" 
+                 src="images/beach_small.jpg" 
+                 alt="Bãi biển với ánh hoàng hôn rực rỡ" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+
+            <img class="thumbnail" 
+                 src="images/city_small.jpg" 
+                 alt="Thành phố hiện đại về đêm" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
